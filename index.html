@@ -405,7 +405,15 @@
 
       <div class="Footer-gmail">
         <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-        
+        <form class="">
+          <input type="email" name="mail" id="mail"/>
+          <button type="submit">Підписатись
+            <svg class="icon-plane" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send-1"></use>
+            </svg>
+          </button>
+          
+        </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -415,6 +423,45 @@
             <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
           </svg>
         </button>
+        
+        <form class="form">
+          <p class="footer-text">Залишіть свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label for="name">Ім'я</label>
+           <input type="text" name="name" id="name" autofocus/>
+           <svg class="icon-name" width="12" height="12">
+             <use href="./images/symbol-defs.svg#icon-Vector-5"></use>
+           </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel"/>
+            <svg class="icon-tel" width="15" height="12">
+              <use href="./images/symbol-defs.svg#icon-Vector-2-1"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail"/>
+            <svg class="icon-mail" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-Vector-3-1"></use>
+            </svg>
+          </div>
+
+          <div>
+            <label for="coment">Коментар</label>
+            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" name="topic" value="coordination" id="coordination"/>
+            <label for="coordination">Погоджуюся з розсилкою та приймаю Умови договору</label>
+  
+          </div>
+          <button type="submit" >Надіслати</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

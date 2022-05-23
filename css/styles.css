@@ -1022,3 +1022,26 @@ ul {
 .modal-icon {
   fill: #000000;
 }
+
+
+/* form */
+
+.footer-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--maim-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form {
+  outline: 1px solid red;
+ width: 448px;
+ margin-right: 0;
+ margin: 40px;
+}
