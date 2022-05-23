@@ -49,6 +49,8 @@ ul {
   list-style: none;
   
 }
+
+
 /* логотип */
 
 
@@ -205,6 +207,8 @@ ul {
   margin-right: 10px;
   
 }
+
+
 
 /* іконки */
 
@@ -800,7 +804,7 @@ ul {
   font-size: 18px;
   color: rgba(255, 255, 255, 1);
   line-height: 1.6;
-  weight: 400;
+  font-weight: 400;
   background-color: rgba(33, 150, 243, 0.9);
 
   width: 100%;
