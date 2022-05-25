@@ -1051,6 +1051,7 @@ textarea {
 
 .form {
   
+  
  width: 448px;
  margin-left: auto;
  margin-right: auto;
@@ -1065,10 +1066,21 @@ textarea {
   margin-bottom: 10px;
 }
 
+.form-input {
+  padding-left: 42px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 1);
+}
+
+
+
 
 .icon-input {
  position: absolute;
- top: 50%;
+ top: 55%;
  left: 15px;
 }
 
@@ -1090,11 +1102,23 @@ textarea {
 .textarea {
   width: 448px;
   height: 120px;
+
+  resize: none;
+  
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
   padding-top: 12px;
   padding-left: 16px;
+}
+
+
+.textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.17;
+
 }
 
 .label-accent {
@@ -1105,11 +1129,23 @@ textarea {
 .coordination {
   
   margin-bottom: 30px;
+  padding-left:  30px;
+}
+
+.lebel-coordination {
+  color: rgba(117, 117, 117, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 
 
+
+
 .button-send {
+  display: flex;
+  
   line-height: 1.87;
   cursor: pointer;
   font-size: 16px;
@@ -1122,10 +1158,15 @@ textarea {
   border: none;
   padding: 10px 55px;
 
+ margin: 0 auto;
  
-
+ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   
+  
+}
+
+.checkbox:checked {
   
 }
 
@@ -1139,7 +1180,6 @@ textarea {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  box-shadow:  4px 0px 4px  rgba(0, 0, 0, 0.15);
-  
+ 
 }
 
