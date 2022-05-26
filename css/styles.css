@@ -973,6 +973,10 @@ ul {
   margin-left: 93px;
 }
 
+.gmail-form {
+  display: flex;
+}
+
 .gmail-input {
   width: 358px;
   height: 50px;
@@ -993,6 +997,7 @@ ul {
 }
 
 .button-gmail {
+  display: flex;
   
   width: 200px;
   height: 50px;
@@ -1007,6 +1012,7 @@ ul {
   border-radius: 4px;
   border: none;
   padding: 10px 62px 10px 29px;
+  margin-left: 12px;
 }
 
 .button-gmail:hover,
@@ -1018,10 +1024,9 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .icon-plane {
   
-  
+  margin-left: 10px;
 }
 
 
@@ -1150,6 +1155,12 @@ textarea {
   border-radius: 4px;
   
 }
+
+.form-input:hover ~ .icon-input {
+  color: rgba(33, 150, 243, 1);
+}
+
+
 
 .textarea {
   width: 448px;

@@ -403,12 +403,15 @@
         </div>
         <div class="footer-gmail">
           <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-          <form class="gmail-form">
+          <form class="gmail-form" autocomplete="off">
+            <label for="mail"></label>
             <input class="gmail-input" type="email" name="mail" id="mail" placeholder="E-mail"/>
             <button class="button-gmail" type="submit"><span>Підписатись</span>
-              <svg class="icon-plane" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-icon-send-1"></use>
-              </svg>
+              <span class="icon-plane">
+                <svg class="icon-plane" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-icon-send-1"></use>
+                </svg>
+              </span>
             </button>
           </form>
         </div>
@@ -422,7 +425,7 @@
           </svg>
         </button>
         
-        <form class="form">
+        <form class="form" autocomplete="off">
           <p class="footer-text">Залишіть свої дані, ми вам передзвонимо</p>
           <div class="form-field">
             <label class="form-label" for="name">Ім'я</label>
@@ -455,7 +458,7 @@
 
           <div class="coordination">
             <input class="checkbox" type="checkbox" name="topic" value="coordination" id="coordination">
-            <label class="lebel-coordination" for="coordination">Погоджуюся з розсилкою та приймаю <a href=""> <span class="label-accent">Умови договору</span></a> </label>
+            <label class="lebel-coordination" for="coordination">Погоджуюся з розсилкою та приймаю <a class="label-accent" href="">Умови договору</a> </label>
           </div>
           <button class="button-send" type="submit" >Надіслати</button>
         </form>
