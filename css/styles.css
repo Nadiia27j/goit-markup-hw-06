@@ -1189,10 +1189,14 @@ textarea {
   text-decoration: underline;
 }
 
+
+
+
+
 .coordination {
   
   margin-bottom: 30px;
-  padding-left:  30px;
+  padding-left:  13px;
 }
 
 .lebel-coordination {
@@ -1201,6 +1205,10 @@ textarea {
   font-weight: 400;
   line-height: 1.7;
 }
+
+
+
+
 
 
 
@@ -1222,6 +1230,7 @@ textarea {
   padding: 10px 55px;
 
  margin: 0 auto;
+ margin-top: 30px;
  
  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
@@ -1229,9 +1238,6 @@ textarea {
   
 }
 
-.checkbox:checked {
-  
-}
 
 
 .button-send:hover,

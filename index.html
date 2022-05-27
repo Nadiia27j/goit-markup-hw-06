@@ -457,10 +457,15 @@
           </div>
 
           <div class="coordination">
-            <input class="checkbox" type="checkbox" name="topic" value="coordination" id="coordination">
-            <label class="lebel-coordination" for="coordination">Погоджуюся з розсилкою та приймаю <a class="label-accent" href="">Умови договору</a> </label>
+            <input class="checkbox" type="checkbox" name="topic" value="coordination" id="coordination" tabindex="-1" visuallu-hidden>
+            <span class="custom-checkbox" tabindex="0" role="checkbox" aria-checked="false" aria-labelledby="coordination">
+              <svg class="custom-checkbox-icon" width="15" height="15">
+                <use href="./images/symbol-defs.svg#icon-icon-check-3"></use>
+              </svg>
+            </span>
+            <label class="lebel-coordination" for="coordination"><span>Погоджуюся з розсилкою та приймаю <a class="label-accent" href="">Умови договору</a></span></label>
           </div>
-          <button class="button-send" type="submit" >Надіслати</button>
+          <button class="button-send" type="submit">Надіслати</button>
         </form>
       </div>
     </div>
