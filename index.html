@@ -455,15 +455,16 @@
             <label class="form-label" for="coment">Коментар</label>
             <textarea class="textarea" name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
           </div>
-
-          <div class="coordination">
-            <input class="checkbox" type="checkbox" name="topic" value="coordination" id="coordination" tabindex="-1" visuallu-hidden>
-            <span class="custom-checkbox" tabindex="0" role="checkbox" aria-checked="false" aria-labelledby="coordination">
-              <svg class="custom-checkbox-icon" width="15" height="15">
-                <use href="./images/symbol-defs.svg#icon-icon-check-3"></use>
+          <div class="form-checkbox">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+            <label class="checkbox-label" for="checkbox">
+              <svg class="checkbox-icon" width="16px" height="15px">
+                <use href="./images/symbol-defs.svg#icon-icon-checkbox-1-1"></use>
               </svg>
-            </span>
-            <label class="lebel-coordination" for="coordination"><span>Погоджуюся з розсилкою та приймаю <a class="label-accent" href="">Умови договору</a></span></label>
+              <span class="checkbox-text">Погоджуюся з розсилкою та приймаю<a class="checkbox-link" href="">
+                Умови договору</a>
+              </span>
+            </label>
           </div>
           <button class="button-send" type="submit">Надіслати</button>
         </form>
