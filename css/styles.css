@@ -1082,12 +1082,16 @@ ul {
 }
 
 
-.modal-icon {
-  fill: #000000;
+
+
+.modal-button:hover + .modal-icon,
+.modal-button:focus + .modal-icon {
+  fill: var(--bg-buttons-color-hover);
 }
 
-.modal-button:hover .modal-icon {
-  color: var(--bg-buttons-color-hover);
+.modal-button:hover,
+.modal-button:focus {
+fill: var(--bg-buttons-color-hover);
 }
 
 
@@ -1107,8 +1111,6 @@ textarea {
 }
 
 .form {
-  
-  
  width: 448px;
  margin-left: auto;
  margin-right: auto;
@@ -1123,13 +1125,28 @@ textarea {
   margin-bottom: 10px;
 }
 
-.form-field:focus .icon-input .form-input {
-  color: rgba(33, 150, 243, 1);
-}
+
 
 .form-input {
   padding-left: 42px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+.form-input:hover + .icon-input,
+.form-input:focus + .icon-input {
+  fill: var(--bg-buttons-color-hover);
+  
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--bg-buttons-color-hover);
+  
+}
+
+
 
 .form-label {
   font-size: 12px;
@@ -1143,7 +1160,9 @@ textarea {
  position: absolute;
  top: 55%;
  left: 15px;
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .form-field label {
@@ -1160,9 +1179,7 @@ textarea {
   
 }
 
-.form-input:hover ~ .icon-input {
-  color: rgba(33, 150, 243, 1);
-}
+
 
 
 
@@ -1177,6 +1194,9 @@ textarea {
   
   padding-top: 12px;
   padding-left: 16px;
+
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -1185,10 +1205,15 @@ textarea {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.17;
-
+  
 }
 
+.textarea:hover,
+.textarea:focus{
+ border-color: var(--bg-buttons-color-hover);
 
+ 
+}
   
 
 /* checkbox */
